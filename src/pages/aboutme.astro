@@ -1,3 +1,8 @@
+---
+import profile from '../images/profile.jpg';
+
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -12,22 +17,38 @@
 
 
 <body>
-  <div>
-    <h1>I'm Sam</h1>
-    <p> I'm an anthropologist, writer and organizer. I have an urgent need to create work that creates worlds. </p>
+ <div class="flex flex-col md:flex-row">
+ 
+  <div class="pr-10">
+    <h1 class="font-bold text-4xl">I'm Sam</h1>
+    <p class="text-lg"> I'm an anthropologist, writer and organizer. I have an urgent need to create work that creates worlds. </p>
+    <img src={profile} width="400"  />
+  <div class="place-items-center">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+      <a href="/public/resume.pdf">resume</a>   
+
+    </button>
+   
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+       <a href="/public/cv.pdf">cv</a>
+  </button>   
+  </div>
+
+
   </div>
   <div>
-    <p> Topsail bilge rat gangplank aye Spanish Main bucko heave down rum crimp mizzen. Transom black spot scuppers belay handsomely pirate spanker red ensign maroon chase. Cat o'nine tails gaff draught rum gibbet pinnace jury mast brig prow gangplank. </p>
+    <p class="mb-4"> Topsail bilge rat gangplank aye Spanish Main bucko heave down rum crimp mizzen. Transom black spot scuppers belay handsomely pirate spanker red ensign maroon chase. Cat o'nine tails gaff draught rum gibbet pinnace jury mast brig prow gangplank. </p>
 
-    <p> Knave carouser spanker starboard jack avast booty broadside ahoy Pirate Round. Measured fer yer chains scourge of the seven seas heave to chandler avast salmagundi fluke furl hands case shot. Furl line ho scallywag deadlights boom yard quarter loot transom. </p>
+    <p class="mb-4"> Knave carouser spanker starboard jack avast booty broadside ahoy Pirate Round. Measured fer yer chains scourge of the seven seas heave to chandler avast salmagundi fluke furl hands case shot. Furl line ho scallywag deadlights boom yard quarter loot transom. </p>
 
-    <p>Transom Sink me warp cackle fruit Pieces of Eight list jack Jolly Roger smartly code of conduct. Careen landlubber or just lubber flogging lugsail bilged on her anchor sheet jib schooner fore cutlass. To go on account scuppers black jack ballast gaff broadside keelhaul salmagundi lass marooned.
+    <p class="mb-4">Transom Sink me warp cackle fruit Pieces of Eight list jack Jolly Roger smartly code of conduct. Careen landlubber or just lubber flogging lugsail bilged on her anchor sheet jib schooner fore cutlass. To go on account scuppers black jack ballast gaff broadside keelhaul salmagundi lass marooned.
   </p>
   </div>
-
+</div>
 
 
 
 
 
 </body>
+</html>
