@@ -1,13 +1,14 @@
 ---
  import AcademicCap from 'astro-heroicons/solid/AcademicCap.astro'
+ import Envelope from 'astro-heroicons/solid/Envelope.astro'
 
 ---
 
 
 # header 
 
-<header class="fixed z-50 top-0 left-0 w-full bg-gray-900">
-  <div class="container mx-auto px-4 py-6">
+<header class="fixed z-50 top-0 left-0 w-full bg-black">
+  <div class="container mx-auto px-4 py-4">
     <div class="flex items-center justify-between">
       <h1 class="text-xl font-bold text-white">Sam Law</h1>
       <nav>
@@ -45,6 +46,13 @@
           <a href="/cv.pdf" class="bg-white text-gray-900 rounded-full py-2 px-4 mx-2 text-sm font-bold hover:bg-gray-100">CV</a>
           <a href="/resume.pdf" class="bg-white text-gray-900 rounded-full py-2 px-4 mx-2 text-sm font-bold hover:bg-gray-100">Resume</a>
         </div>
+      <div class="flex justify-center mt-8">
+        <a href="mailto:sam.law@utexas.edu" class="flex items-center text-gray-400 hover:text-white transition duration-300 ease-in-out">
+           <span class="mr-2"><Envelope class="h-6 w-6"/></span>
+          <span class="font-bold">Email me</span>
+          </a>
+      </div>
+
       </div>
 <div class="w-full md:w-2/3 px-4">
   <h2 class="text-2xl font-bold text-white mb-4">About Me</h2>
@@ -67,17 +75,17 @@
           <p class="font-bold">
             <span class="flex items-center">
               <AcademicCap class="w-6 h-6 mr-2 text-white" />
-              <span class="text-white">MA in Social Sciences</span>
+              <span class="text-white text-sm">Master of Arts in Social Sciences, 2017</span>
             </span>
 
-            <span class="font-normal text-sm ml-10">University of Chicago</span>
+            <span class="font-normal text-sm">University of Chicago</span>
           </p>
           <p class="font-bold">
             <span class="flex items-center">
               <AcademicCap class="w-6 h-6 mr-2 text-white" />
-              <span class="text-white">BA in Anthropology</span>
+              <span class="text-white text-sm">Bachelor of Arts in Anthropology, 2014</span>
             </span>
-            <span class="font-normal text-sm ml-10">Reed College</span>
+            <span class="font-normal text-sm">Reed College</span>
           </p>
         </div>
       </div>
@@ -90,18 +98,16 @@
 
     </div>
   </div>
-
-
-
 </section>
+
 
 <section id="research" class="bg-gray-800">
   <div class="container mx-auto px-4 py-16">
     <div class="flex flex-wrap -mx-4">
-      <div class="w-full md:w-1/2 px-4">
+      <div class="w-full md:w-1/3 px-4">
         <h3 class="text-lg font-bold text-white mb-2">Research Interests</h3>
       </div>
-      <div class="w-full md:w-1/2 px-4">
+      <div class="w-full md:w-2/3 px-4">
         <p class="text-gray-400 leading-loose">My research interests center around autonomous social movements in Mexico City. Through ethnographic research, I aim to understand how these movements construct alternative forms of social organization and power. Specifically, I am interested in the strategies and practices that these movements use to build and sustain autonomy, the relationship between these movements and the state, and the broader implications of these movements for social and political change. By studying autonomous social movements in Mexico City, I hope to contribute to a deeper understanding of how marginalized communities can organize and resist structures of oppression.</p>
       </div>
     </div>
@@ -110,41 +116,65 @@
 
 <section id="publications" class="bg-gray-700">
   <div class="container mx-auto px-4 py-16">
-    <div class="flex flex-wrap -mx-4">
-      <div class="w-full md:w-1/2 px-4">
+    <div class="flex flex-wrap -mx-4 justify-between">
+      
+      <div class="w-full md:w-1/3 px-4">
         <h3 class="text-lg font-bold text-white mb-2">Featured Publications</h3>
       </div>
-      <div class="w-full md:w-1/2 px-5">
-        <div class="bg-gray-900 rounded-lg shadow-lg p-6 mb-6">
-          <p class="text-gray-400 mb-2">Law, Sam, Alan Cruz, and Vanessa Nava </p>
-          <p class="text-gray-400 mb-4">January 2023</p>
-          <h4 class="text-white font-bold mb-2">Constructing a Communal Form of Life: Destituent Praxis in the Peripheries of Mexico City</h4>
-          <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dui velit. Sed convallis elit eu metus commodo, in iaculis risus malesuada. Morbi eu ante ut ante lobortis lobortis ut sed erat.</p>
-          <a href="https://doi.org/10.1215/00382876-10242686" target="_blank" rel="noopener noreferrer" class="border border-blue-500 text-blue-500 rounded-full px-4 py-2 text-sm font-bold hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">DOI</a>
+
+      <div class="w-full md:w-2/3 px-5">
+        <div class="space-y-6">
+          
+          <div class="bg-gray-900 rounded-lg shadow-lg p-6 mb-6 w-full flex-1">
+            <p class="text-gray-400 mb-2"> <strong> Law, Sam </strong>, Alan Cruz, and Vanessa Nava </p>
+            <p class="text-gray-400 mb-4">January 2023 &bull; South Atlantic Quarterly</p>
+            <h4 class="text-white font-bold mb-2">Constructing a Communal Form of Life: Destituent Praxis in the Peripheries of Mexico City</h4>
+            <p class="text-white mb-4">This article examines how the Panchos, a group of land occupiers in Mexico City, have created eight autonomous communities that challenge the dominant urban order. Drawing on Ivan Illich's critique of institutionality and recent theories of destituent power, the article shows how the Panchos practice a communal and dignified form of life that refuses and abandons the state and its institutions. The article argues that the Panchos' destituent praxis is an example of emancipatory politics that builds alternative ways of living in the present.</p>
+            <a href="https://doi.org/10.1215/00382876-10242686" target="_blank" rel="noopener noreferrer" class="border border-blue-500 text-blue-500 rounded-full px-4 py-2 text-sm font-bold hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">DOI</a>
+          </div>
+      
+
+
+          
+            <div class="bg-gray-900 rounded-lg shadow-lg p-6 mb-6 w-full flex-1">
+              <p class="text-gray-400 mb-2 font-bold">Law, Sam</p>
+              <p class="text-gray-400 mb-4">March 2022 &bull; Political and Legal Anthropology Review: Emergent Conversations</p>
+              <h4 class="text-white font-bold mb-2">Building Urban Autonomy: The Construction of a Communal Form of Life in Mexico City&apos;s Peripheries</h4>
+              <p class="text-white mb-4">This article examines how the Comunidad Habitacional Acapatzingo, an autonomous community of around 3,000 people in the peripheries of Mexico City, has transformed from a squatted land filled with rubble into a space of urban autonomy and communal life. Drawing on ethnographic fieldwork and the concept of destituent power, the author analyzes how the community has developed its own forms of organization, communication, education, health care, and agriculture that challenge the dominant modes of urban governance and capitalism. The article argues that autonomy is not a fixed state or goal, but a dynamic process of creating and sustaining other worlds and communal forms of life in the face of multiple threats and challenges.</p>
+              <a href="https://polarjournal.org/2022/03/31/building-urban-autonomy-the-construction-of-a-communal-form-of-life-in-mexico-citys-peripheries/" target="_blank" rel="noopener noreferrer" class="border border-blue-500 text-blue-500 rounded-full px-4 py-2 text-sm font-bold hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">Link</a>
+            </div>
+          
+
+          
+            <div class="bg-gray-900 rounded-lg shadow-lg p-6 mb-6 w-full flex-1">
+              <p class="text-gray-400 mb-2">Hern&aacute;ndez, Maricarmen, <strong> Sam Law </strong>, and Javier Auyero</p>
+              <p class="text-gray-400 mb-4">September 2021 &bull; Qualitative Sociology </p>
+              <h4 class="text-white font-bold mb-2">How Do the Urban Poor Survive? A Comparative Ethnography of Subsistence Strategies in Argentina, Ecuador, and Mexico</h4>
+              <p class="text-white mb-4">This paper examines how the urban poor in three informal communities in Argentina, M&eacute;xico, and Ecuador cope with poverty and insecurity. It uses ethnographic data to explore the role of kinship, friendship, patronage, and collective action in their problem-solving strategies. It also compares their experiences with the pioneering studies of survival strategies by Lomnitz and Stack. It argues that poor people&apos;s survival strategies are embedded in everyday political processes.</p>
+              <a href="https://doi.org/10.1007/s11133-021-09494-z" target="_blank" rel="noopener noreferrer" class="border border-blue-500 text-blue-500 rounded-full px-4 py-2 text-sm font-bold hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">DOI</a>
+            </div>
+          
+          </div>
         </div>
-
-<div class="w-full md:w-1/2 px-5">
-  <div class="bg-gray-900 rounded-lg shadow-lg p-6 mb-6 w-full">
-    <p class="text-gray-400 mb-2">Law, Sam</p>
-    <p class="text-gray-400 mb-4">March 2022</p>
-    <h4 class="text-white font-bold mb-2">Building Urban Autonomy: The Construction of a Communal Form of Life in Mexico City’s Peripheries</h4>
-    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dui velit. Sed convallis elit eu metus commodo, in iaculis risus malesuada. Morbi eu ante ut ante lobortis lobortis ut sed erat.</p>
-    <a href="https://polarjournal.org/2022/03/31/building-urban-autonomy-the-construction-of-a-communal-form-of-life-in-mexico-citys-peripheries/" target="_blank" rel="noopener noreferrer" class="border border-blue-500 text-blue-500 rounded-full px-4 py-2 text-sm font-bold hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">Link</a>
-  </div>
-</div>
-
-<div class="w-full md:w-1/2 px-5">
-  <div class="bg-gray-900 rounded-lg shadow-lg p-6 mb-6 w-full">
-    <p class="text-gray-400 mb-2">Hernández, Maricarmen, Sam Law, and Javier Auyero</p>
-    <p class="text-gray-400 mb-4">September 2021</p>
-    <h4 class="text-white font-bold mb-2">How Do the Urban Poor Survive? A Comparative Ethnography of Subsistence Strategies in Argentina, Ecuador, and Mexico</h4>
-    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed dui velit. Sed convallis elit eu metus commodo, in iaculis risus malesuada. Morbi eu ante ut ante lobortis lobortis ut sed erat.</p>
-    <a href="https://doi.org/10.1007/s11133-021-09494-z" target="_blank" rel="noopener noreferrer" class="border border-blue-500 text-blue-500 rounded-full px-4 py-2 text-sm font-bold hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">DOI</a>
-  </div>
-</div>
-
-
       </div>
     </div>
   </div>
 </section>
+
+
+<section id="teaching" class="bg-gray-700">
+  <div class="container mx-auto px-4 py-16">
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full md:w-1/3 px-4">
+        <h3 class="text-lg font-bold text-white mb-2">Teaching</h3>
+      </div>
+      <div class="w-full md:w-2/3 px-4">
+        <p class="text-gray-400 leading-loose">I firmly believe in utilizing innovative pedagogical tools, such as social annotation and iterative practice, to create an engaging and dynamic learning environment. Through my unique approach, I aim to empower students to explore the complexities of freedom and its implications, while simultaneously nurturing their critical thinking and communication abilities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white text-center py-4">
+  <p class="text-sm">Created by Sam Law. Licensed under Copyleft.</p>
+</footer>
